@@ -90,6 +90,7 @@ function load(file){
   img.onload=()=>{
     currentImg=img;
     const d=$('drop'); d.innerHTML=''; d.appendChild(img); d.style.alignItems='flex-start';
+    
     run();
   };
   img.src=URL.createObjectURL(file);
